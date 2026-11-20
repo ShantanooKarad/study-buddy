@@ -5,5 +5,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 ENV PORT=8080
 EXPOSE 8080
-CMD streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --
-server.headless=true
+CMD streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
